@@ -4,3 +4,28 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+
+.theme-light {
+    --currentColor: rgba(0, 0, 0, 1);
+    --bg-color: rgba(255, 255, 255, 1);
+    --article-title-weight: 700;
+
+    --bg-gradient:
+            repeating-linear-gradient(90deg, var(--bg-color) 0 2px, rgba(0, 0, 0, 0) 2px 4px),
+            repeating-linear-gradient(180deg, var(--bg-color) 0 2px, rgba(0, 0, 0, 0) 2px 4px),
+            linear-gradient(180deg, var(--bg-color) 0%, var(--currentColor) 100%);
+}
+
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --currentColor: rgba(0, 0, 0, 1);
+        --bg-color: rgba(255, 255, 255, 1);
+        --article-title-weight: 700;
+
+        --bg-gradient:
+                repeating-linear-gradient(90deg, var(--bg-color) 0 2px, rgba(0, 0, 0, 0) 2px 4px),
+                repeating-linear-gradient(180deg, var(--bg-color) 0 2px, rgba(0, 0, 0, 0) 2px 4px),
+                linear-gradient(180deg, var(--bg-color) 0%, var(--currentColor) 100%);
+    }
+}

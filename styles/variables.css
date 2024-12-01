@@ -7,6 +7,8 @@
     --accent-font: 'PressStart2P';
     --article-title-weight: 785;
     --sparks-color: rgba(255, 0, 0, 1);
+    --button-text-color: var(--currentColor);
+    --transition-ease: .3s ease;
 
     --bg-gradient:
             repeating-linear-gradient(90deg, var(--bg-color) 0 2px, rgba(0, 0, 0, 0) 2px 4px),

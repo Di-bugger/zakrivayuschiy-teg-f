@@ -117,7 +117,7 @@
 /*Article*/
 
 .article {
-    margin-block-end: 54px;
+    margin-block-end: 53px;
 }
 
 .article:nth-last-of-type(1) {
@@ -132,8 +132,7 @@
 
 .article-img {
     width: 100%;
-    border-top: 2px solid var(--currentColor);
-    border-bottom: 2px solid var(--currentColor);
+    height: 100%;
 }
 
 .img-saturate {
@@ -167,6 +166,10 @@
 .article-img__wrapper {
     position: relative;
     overflow: hidden;
+    border-top: 2px solid var(--currentColor);
+    border-bottom: 2px solid var(--currentColor);
+    width: max(100%, min(5vw, 696px));
+    height:min(696px, max(100vw, 365px)) ;
 }
 
 .article-img__label {
@@ -189,7 +192,7 @@
 }
 
 .article__content {
-    padding: 21px 25px 20px 25px;
+    padding: min(30px, max(5vw, 26px)) 25px 20px 25px;
     font-variation-settings: 'wght' 400, 'slnt' 0;
     font-size: 18px;
     line-height: 117%;

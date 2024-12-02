@@ -212,8 +212,11 @@
     gap: 2px;
 }
 
+.card__like-button {
+    min-inline-size: 130px;
+}
+
 .button {
-    inline-size: 130px;
     position: relative;
     border: 2px solid var(--currentColor);
     outline: none;
@@ -357,4 +360,43 @@
 .popup__icon {
     mix-blend-mode: difference;
     color: var(--button-text-color);
+}
+
+.dialog {
+    max-width: max(341px, min(91vw, 357px));
+    padding: 30px 42px;
+    font-family: var(--accent-font), sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    border: 2px solid var(--currentColor);
+    background-color: var(--bg-color);
+}
+
+.dialog[open] {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.dialog__content {
+    display: flex;
+    align-items: center;
+    gap: 21px;
+    line-height: 21px;
+}
+
+.popup__icon-modal {
+    min-width: 39px;
+    min-height: 39px;
+}
+
+.dialog__button-ok {
+    width: 100%;
+    padding: 13px 100px;
 }

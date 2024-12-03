@@ -9,6 +9,7 @@
     --currentColor: rgba(0, 0, 0, 1);
     --bg-color: rgba(255, 255, 255, 1);
     --article-title-weight: 700;
+    --article-content-weight: 400;
     --button-text-color: var(--bg-color);
 
     --bg-gradient:
@@ -23,6 +24,8 @@
         --currentColor: rgba(0, 0, 0, 1);
         --bg-color: rgba(255, 255, 255, 1);
         --article-title-weight: 700;
+        --article-content-weight: 400;
+        --button-text-color: var(--bg-color);
 
         --bg-gradient:
                 repeating-linear-gradient(90deg, var(--bg-color) 0 2px, rgba(0, 0, 0, 0) 2px 4px),

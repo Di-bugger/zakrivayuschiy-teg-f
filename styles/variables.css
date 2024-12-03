@@ -6,6 +6,7 @@
     --main-font: 'Inter-Variable';
     --accent-font: 'PressStart2P';
     --article-title-weight: 785;
+    --article-content-weight: 465;
     --sparks-color: rgba(255, 0, 0, 1);
     --button-text-color: var(--currentColor);
     --transition-ease: .3s ease;

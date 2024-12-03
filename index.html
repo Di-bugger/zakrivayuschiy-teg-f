@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="color-scheme" content="dark light" />
     <title>Закрывающий тег</title>
-    <link rel="icon" href="images/favicon.svg" />
+    <link rel="icon" href="./images/favicon.ico" sizes="any" />
+    <link rel="icon" href="./images/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./images/favicon.png" />
     <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="stylesheet" href="./styles/variables.css" />
     <link rel="stylesheet" href="./styles/globals.css" />
@@ -65,13 +67,14 @@
             Место для ваших воспоминаний о начале обучения.
           </p>
           <div class="article__content-controls">
-            <button class="card__icon-button">
+            <button class="card__icon-button" type="button">
               <svg class="like-icon"
                    width="34"
                    height="32"
                    viewBox="0 0 39 37"
                    fill="none"
-                   xmlns="http://www.w3.org/2000/svg">
+                   xmlns="http://www.w3.org/2000/svg"
+                   aria-hidden="true">
                 <g class="heart">
                   <path class="contour" d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18
                 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24
@@ -91,7 +94,7 @@
               </svg>
 
             </button>
-            <button class="card__like-button button">
+            <button class="card__like-button button" type="button">
               <span class="button__text">
                 Like
               </span>
@@ -119,7 +122,7 @@
             Место для ваших воспоминаний о начале первого спринта.
           </p>
           <div class="article__content-controls">
-            <button class="card__icon-button">
+            <button class="card__icon-button" type="button">
               <svg class="like-icon"
                    width="34"
                    height="32"
@@ -145,7 +148,7 @@
               </svg>
 
             </button>
-            <button class="card__like-button button">
+            <button class="card__like-button button" type="button">
               <span class="button__text">
                 Like
               </span>
@@ -172,7 +175,7 @@
             Место для ваших воспоминаний об окончании первого спринта.
           </p>
           <div class="article__content-controls">
-            <button class="card__icon-button">
+            <button class="card__icon-button" type="button">
               <svg class="like-icon"
                    width="34"
                    height="32"
@@ -198,7 +201,7 @@
               </svg>
 
             </button>
-            <button class="card__like-button button">
+            <button class="card__like-button button" type="button">
               <span class="button__text">
                 Like
               </span>
@@ -226,7 +229,7 @@
             Место для ваших воспоминаний о начале второго спринта.
           </p>
           <div class="article__content-controls">
-            <button class="card__icon-button">
+            <button class="card__icon-button" type="button">
               <svg class="like-icon"
                    width="34"
                    height="32"
@@ -252,7 +255,7 @@
               </svg>
 
             </button>
-            <button class="card__like-button button">
+            <button class="card__like-button button" type="button">
               <span class="button__text">
                 Like
               </span>
@@ -281,7 +284,7 @@
             Место для ваших воспоминаний об окончании второго спринта.
           </p>
           <div class="article__content-controls">
-            <button class="card__icon-button">
+            <button class="card__icon-button" type="button">
               <svg class="like-icon"
                    width="34"
                    height="32"
@@ -307,7 +310,7 @@
               </svg>
 
             </button>
-            <button class="card__like-button button">
+            <button class="card__like-button button" type="button">
               <span class="button__text">
                 Like
               </span>
@@ -335,7 +338,7 @@
             Место для ваших воспоминаний о начале третьего спринта.
           </p>
           <div class="article__content-controls">
-            <button class="card__icon-button">
+            <button class="card__icon-button" type="button">
               <svg class="like-icon"
                    width="34"
                    height="32"
@@ -361,7 +364,7 @@
               </svg>
 
             </button>
-            <button class="card__like-button button">
+            <button class="card__like-button button" type="button">
               <span class="button__text">
                 Like
               </span>
@@ -389,7 +392,7 @@
             Место для ваших воспоминаний об окончании третьего спринта.
           </p>
           <div class="article__content-controls">
-            <button class="card__icon-button">
+            <button class="card__icon-button" type="button">
               <svg class="like-icon"
                    width="34"
                    height="32"
@@ -415,7 +418,7 @@
               </svg>
 
             </button>
-            <button class="card__like-button button">
+            <button class="card__like-button button" type="button">
               <span class="button__text">
                 Like
               </span>
@@ -444,7 +447,7 @@
             Место, чтобы остановиться, подумать и написать, что вы чувствуете в этой точке пути.
           </p>
           <div class="article__content-controls">
-            <button class="card__icon-button">
+            <button class="card__icon-button" type="button">
               <svg class="like-icon"
                    width="34"
                    height="32"
@@ -470,7 +473,7 @@
               </svg>
 
             </button>
-            <button class="card__like-button button">
+            <button class="card__like-button button" type="button">
               <span class="button__text">
                 Like
               </span>
@@ -478,29 +481,14 @@
           </div>
         </div>
       </article>
-    </main>
 
-    <footer class="footer">
-      <button  type="button"
-               onclick="window['dialog'].showModal()"
-               aria-controls="dialog-id"
-               class="button button-save">
-        <svg
-                class="popup__icon button__text"
-                width="28"
-                height="28"
-                viewBox="0 0 21 21"
-                xmlns="http://www.w3.org/2000/svg">
-          <use href="./svg/floppy.svg#floppy" class="popup__icon-use"></use>
-        </svg>
-        <span class="button__text">
-          Сохранить на память
-        </span>
-      </button>
-      <dialog id="dialog" class="dialog">
-        <div class="dialog__content">
+      <div class="button-save-memorize">
+        <button  type="button"
+                 onclick="window['dialog'].showModal()"
+                 aria-controls="dialog"
+                 class="button button-save">
           <svg
-                  class="popup__icon-modal popup__icon button__text"
+                  class="popup__icon button__text"
                   width="28"
                   height="28"
                   viewBox="0 0 21 21"
@@ -508,18 +496,33 @@
             <use href="./svg/floppy.svg#floppy" class="popup__icon-use"></use>
           </svg>
           <span class="button__text">
+          Сохранить на память
+        </span>
+        </button>
+        <dialog id="dialog" class="dialog">
+          <div class="dialog__content">
+            <svg
+                    class="popup__icon-modal popup__icon button__text"
+                    width="28"
+                    height="28"
+                    viewBox="0 0 21 21"
+                    xmlns="http://www.w3.org/2000/svg">
+              <use href="./svg/floppy.svg#floppy" class="popup__icon-use"></use>
+            </svg>
+            <p class="button__text">
             Вставьте дискету, чтобы продолжить
-          </span>
-        </div>
-        <button  type="button"
-                 onclick="window['dialog'].close()"
-                 class="dialog__button-ok button">
+          </p>
+          </div>
+          <button  type="button"
+                   onclick="window['dialog'].close()"
+                   class="dialog__button-ok button">
          <span class="button__text">
           ок
          </span>
-        </button>
-      </dialog>
-    </footer>
+          </button>
+        </dialog>
+      </div>
+    </main>
 
     <script src="./scripts/like.js"></script>
   </body>

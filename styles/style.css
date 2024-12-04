@@ -344,13 +344,11 @@
 @media (min-width: 768px) {
     .button-save {
         flex-direction: row;
+        gap: 4px;
     }
     .popup__icon {
         width: 22px;
         height: 22px;
-    }
-    .button-save {
-        gap: 4px;
     }
 }
 

@@ -49,9 +49,10 @@
 }
 
 .subtitle {
+    margin-block-end: 25px;
     font-size: max(14px, min(2vw, 23px));
     font-weight: 400;
-    margin-block-end: 25px;
+    text-transform: uppercase;
 }
 
 .header__theme-menu {
@@ -277,7 +278,7 @@
 
 .like-icon:hover .core {
     fill: var(--currentColor);
-    transition: fill 0.3s ease;
+    transition: fill 0.3s linear;
 }
 
 .like-icon:hover .main-body {
@@ -287,7 +288,7 @@
 
 .like-icon:active .core {
     fill: var(--sparks-color);
-    transition: fill 0.3s ease;
+    transition: fill 0.3s linear;
 }
 
 .like-icon:active .main-body {
@@ -297,7 +298,7 @@
 
 .like-icon.is-liked .core {
     fill: var(--sparks-color);
-    transition: fill 0.3s ease;
+    transition: fill 0.3s linear;
 }
 
 .like-icon.is-liked .main-body {
@@ -357,7 +358,7 @@
 
 .dialog {
     max-width: max(341px, min(91vw, 357px));
-    padding: 30px 42px;
+    padding: 30px 39px;
     font-family: var(--accent-font), sans-serif;
     font-size: 14px;
     text-transform: uppercase;
@@ -391,5 +392,6 @@
 
 .dialog__button-ok {
     width: 100%;
-    padding: 13px 100px;
+    padding: 10px 100px;
+    text-transform: uppercase;
 }
